@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq5sftksbbsvq"]
+
+[ext_resource type="Texture2D" uid="uid://d2d5xnv2tjl01" path="res://xmas_wish.png" id="1_28swp"]
+
+[node name="Xmas-wish" type="Sprite2D"]
+position = Vector2(350, 700)
+scale = Vector2(10, 10)
+texture = ExtResource("1_28swp")

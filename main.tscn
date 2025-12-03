@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=3 uid="uid://cijx2ractm7kp"]
+
+[ext_resource type="Texture2D" uid="uid://5c7pcv048eby" path="res://menu_screen.png" id="1_4c57u"]
+[ext_resource type="Script" uid="uid://bfbqig8n3u8c5" path="res://start.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://666i81b61fs1" path="res://main.gd" id="1_kek77"]
+[ext_resource type="Script" uid="uid://cody4osof6ncw" path="res://options.gd" id="2_5vw27"]
+[ext_resource type="PackedScene" uid="uid://bq5sftksbbsvq" path="res://xmas_wish.tscn" id="2_lquwl"]
+[ext_resource type="PackedScene" uid="uid://k66tecjuqcnk" path="res://options.tscn" id="3_7mycd"]
+[ext_resource type="Script" uid="uid://biwv8k7tbr0ek" path="res://help.gd" id="3_kek77"]
+[ext_resource type="Script" uid="uid://30w6lhampudr" path="res://credits.gd" id="4_4c57u"]
+[ext_resource type="PackedScene" uid="uid://bw3dieb0sroag" path="res://help.tscn" id="4_272bh"]
+[ext_resource type="PackedScene" uid="uid://bka8e8ljo4ip5" path="res://credits.tscn" id="5_5vw27"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_kek77")
+
+[node name="Start" type="Button" parent="."]
+top_level = true
+offset_left = 225.0
+offset_top = 300.0
+offset_right = 475.0
+offset_bottom = 384.0
+theme_override_font_sizes/font_size = 55
+text = "Start"
+script = ExtResource("1_ig7tw")
+
+[node name="Options" type="Button" parent="."]
+top_level = true
+offset_left = 200.0
+offset_top = 540.0
+offset_right = 500.0
+offset_bottom = 630.0
+theme_override_font_sizes/font_size = 55
+text = "Options"
+script = ExtResource("2_5vw27")
+
+[node name="Help" type="Button" parent="."]
+top_level = true
+offset_left = 237.0
+offset_top = 820.0
+offset_right = 463.0
+offset_bottom = 904.0
+theme_override_font_sizes/font_size = 55
+text = "Help"
+script = ExtResource("3_kek77")
+
+[node name="Credits" type="Button" parent="."]
+top_level = true
+offset_left = 489.0
+offset_top = 1327.0
+offset_right = 700.0
+offset_bottom = 1400.0
+theme_override_font_sizes/font_size = 45
+text = "Credits
+"
+script = ExtResource("4_4c57u")
+
+[node name="Xmas-wish" parent="." instance=ExtResource("2_lquwl")]
+visible = false
+
+[node name="options" parent="." instance=ExtResource("3_7mycd")]
+visible = false
+
+[node name="help" parent="." instance=ExtResource("4_272bh")]
+visible = false
+
+[node name="credits" parent="." instance=ExtResource("5_5vw27")]
+visible = false
+
+[node name="menu_screen" type="Sprite2D" parent="."]
+position = Vector2(350, 700)
+scale = Vector2(10, 10)
+texture = ExtResource("1_4c57u")

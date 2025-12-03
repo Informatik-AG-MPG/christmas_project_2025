@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://k66tecjuqcnk"]
+
+[ext_resource type="Texture2D" uid="uid://d0mdjti5kxdlm" path="res://options.png" id="1_5v8ap"]
+
+[node name="options" type="Sprite2D"]
+position = Vector2(350, 700)
+scale = Vector2(10, 10)
+texture = ExtResource("1_5v8ap")
